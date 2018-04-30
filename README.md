@@ -1,7 +1,17 @@
 # Frequency Analysis of Words
 
-[TODO. There will be project description]
+Данный скрипт анализирует текст слова текста и выбирает из них наиболее часто встречающиеся.
+
+# Quickstart
+
+Запуск:
+
+```bash
+python -m lang_frequency.py <filemane>
+```
+
+Запуск под Windows производится точно так же.
 
 # Project Goals
 
-The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
+Код написан в целях обучения. Учебный курс для веб-разработчиков - [DEVMAN.org](https://devman.org)
