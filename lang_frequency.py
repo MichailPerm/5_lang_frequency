@@ -12,7 +12,7 @@ def load_data(filepath):
 
 def get_most_frequent_words(text_data):
     the_most_common_words_quantity = 10
-    punctuation_mark_pattern = re.compile(r"\w{1,}")
+    punctuation_mark_pattern = re.compile(r"\w+")
     words = punctuation_mark_pattern.findall(text_data.lower())
     return Counter(words).most_common(the_most_common_words_quantity)
 
@@ -31,4 +31,4 @@ if __name__ == "__main__":
         sys.exit("Unable to read file {}.".format(args.filepath))
     most_frequent_words = get_most_frequent_words(text_data)
     for word, count in most_frequent_words:
-        print(word)
+        print("Слово \"{}\" встретилось {} раз.".format(word, count))
